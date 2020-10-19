@@ -15,7 +15,7 @@ extern void sort(int *array, int size);
 int convert_string_to_int(char *str, int begin) {
     int n = 0;
     int sign = 1;
-    for(int i = begin; i < strlen(str); i++) {
+    for(size_t i = begin; i < strlen(str); i++) {
         if(n == 0 && str[i] == '-') {
             sign = -1;
         } else if(str[i] <='9' && str[i] >= '0') {
